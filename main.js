@@ -135,6 +135,10 @@ const presets = [
     fn: (x,y)=> 2*Math.log(Math.exp(0.3*x)+Math.exp(0.3*y)+Math.exp(-0.3*(x+y))),
     tex: '2\\,\\log\\!\\bigl(e^{0.3x}+e^{0.3y}+e^{-0.3(x+y)}\\bigr)' },
 
+  { label:'BigBowl',
+    fn: (x,y)=> x + y - Math.log(x) - Math.log(y),
+    tex: 'x+y\\,{-}\\log\\!\\bigl(x)\\,{-}\\log\\!\\bigl(x)' },
+
   { label:'Sine × Cos',
     fn: (x,y)=> Math.sin(x)*Math.cos(y),
     tex: '\\sin x\\,\\cos y' },
